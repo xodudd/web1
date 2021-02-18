@@ -7,6 +7,18 @@
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="
+    var target =   document.querySelector('body');
+    if(this.value === 'night') {
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      this.value = 'day';
+    }else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      this.value = 'night';
+    }
+  ">
   <div id='grid'>
     <ol>
       <li><a href="1.html">HTML</a></li>
@@ -14,9 +26,12 @@
       <li><a href="3.html">JavaScript</a></li>
     </ol>
   <div id='article'>
-    <h2>JavaScript란 무엇인가?</h2>
+    <h2>JavaScript</h2>
     <p>
-      JavaScript란 블라블라다.
+      <span id="first">JavaScript</span> (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a programming language that conforms
+      to the ECMAScript specification.[9] <span id="first">JavaScript</span> is high-level, often just-in-time compiled,
+      and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation,
+      and first-class functions.
     </p>
   </div>
 </div>
@@ -55,4 +70,5 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 </body>
 </html>
+
 
